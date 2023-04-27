@@ -1,7 +1,8 @@
 package com.example.springinaction.tacoapp.web;
 
-import com.example.springinaction.tacoapp.enums.Type;
+
 import com.example.springinaction.tacoapp.model.Ingredient;
+import com.example.springinaction.tacoapp.model.Ingredient.*;
 import com.example.springinaction.tacoapp.model.Taco;
 import com.example.springinaction.tacoapp.model.TacoOrder;
 import lombok.extern.slf4j.Slf4j;
@@ -66,6 +67,8 @@ public class DesignTacoController {
             return "design";
         }
         tacoOrder.addTaco(taco);
+        System.out.println("Current taco: "+taco);
+        System.out.println(tacoOrder.getTacos());
         log.info("Processing taco:{}", taco);
         return "redirect:/orders/current";
     }

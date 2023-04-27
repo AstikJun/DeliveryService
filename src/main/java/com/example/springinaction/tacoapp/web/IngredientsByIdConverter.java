@@ -1,7 +1,7 @@
 package com.example.springinaction.tacoapp.web;
 
-import com.example.springinaction.tacoapp.enums.Type;
 import com.example.springinaction.tacoapp.model.Ingredient;
+import com.example.springinaction.tacoapp.model.Ingredient.*;
 import org.springframework.core.convert.converter.Converter;
 
 import java.util.HashMap;

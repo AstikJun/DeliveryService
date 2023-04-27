@@ -3,11 +3,12 @@ package com.example.springinaction.tacoapp.model;
 import jakarta.validation.constraints.Digits;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
+import lombok.Data;
 import org.hibernate.validator.constraints.CreditCardNumber;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Data
 public class TacoOrder {
     @NotBlank(message = "Delivery name is required")
     private String deliveryName;
