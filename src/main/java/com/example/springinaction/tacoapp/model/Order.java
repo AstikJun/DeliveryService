@@ -1,7 +1,7 @@
 package com.example.springinaction.tacoapp.model;
 
 import com.example.springinaction.tacoapp.enums.OrderStatus;
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 

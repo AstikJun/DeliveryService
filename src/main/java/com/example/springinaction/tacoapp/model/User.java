@@ -1,12 +1,12 @@
 package com.example.springinaction.tacoapp.model;
 
 import com.example.springinaction.tacoapp.enums.Role;
-import jakarta.persistence.*;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,9 +35,13 @@ public class User {
     @Column(name = "role")
     private Role role;
 
+    public User() {
 
+    }
 
     public User(String login, String password, List<SimpleGrantedAuthority> authorities) {
+
     }
+
 
 }
